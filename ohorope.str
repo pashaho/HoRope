@@ -1,0 +1,12 @@
+STRINGTABLE Ohorope
+{
+	Ohorope       "HoRope Object";
+
+	HOROPE_RES    "Bones";
+	HOROPE_RAD    "Radius";
+	HOROPE_FSUB   "Segments Cap";
+    HOROPE_SEG    "Segments Rot";
+    HOROPE_CTRL    "Create Controls";
+    HOROPE_SKIN    "Create Sweep";
+    HOROPE_SKIN_ON "Show Sweep/bones";
+}
