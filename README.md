@@ -24,6 +24,12 @@ Make it editable to use setup with dynamics.
 HoRope uses only one segment of a spline.   
 You can select multiple splines and click HoRope button holding "ALT" to generate multiple ropes.  
 
+If you whant your rope behaves more stable:  
+In Project settings>Dynamics>Expert
+- set Steps per frame to 20 or higher 
+- set Maximum Solver iterations per step to 20 or higher
+- set error treshold to 3% or less
+
 Contacts
 ------------
 Facebook: https://www.facebook.com/Pasha.kho  
