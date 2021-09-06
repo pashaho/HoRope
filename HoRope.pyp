@@ -119,7 +119,7 @@ class HoRope(plugins.ObjectData):
         sh = utils.SplineHelp()
         sh.InitSpline(proxySpl)
         targlist = []
-        for i in xrange(res + 1):
+        for i in range(res + 1):
             index = float(i) / res
             point_pos = sh.GetMatrix(index).off
             targlist.append(point_pos)
@@ -134,7 +134,7 @@ class HoRope(plugins.ObjectData):
 
         EDList = list(range(res + 1))
         EDList[0] = plist[0]
-        for i in xrange(1, res + 1):
+        for i in range(1, res + 1):
             trg = plist[i] - EDList[i - 1]
             EDList[i] = trg.GetNormalized() * bonelen + EDList[i - 1]
         return EDList
@@ -154,7 +154,7 @@ class HoRope(plugins.ObjectData):
         bone[c4d.PRIM_CAPSULE_SEG] = op[c4d.HOROPE_SEG]
         bone[c4d.PRIM_AXIS] = 0
 
-        for i in xrange(resolution):
+        for i in range(resolution):
             boneclone = bone.GetClone()
             boneTM = self.LookAt(poslist[i], poslist[i + 1])  # Each part looks at next
             boneTM.off = (poslist[i] + poslist[i + 1]) / 2
@@ -171,7 +171,7 @@ class HoRope(plugins.ObjectData):
         obj[c4d.FORCE_ALWAYS_VISIBLE] = 0
         bone = bones.GetDown()
 
-        for i in xrange(resolution - 1):
+        for i in range(resolution - 1):
             connector = obj.GetClone()
             connector.SetMg(bone.GetNext().GetMg())
             self.SwapAxis(connector)
