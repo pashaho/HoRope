@@ -3,7 +3,7 @@ HoRope
 #### Cinema 4D Python Plugin  
 
 Python script based plugin that generates setup for animating dynamic ropes.  
-Tested on CINEMA 4D R18 and R19
+Tested on CINEMA 4D R18 - R25
 
 Installation
 ------------
